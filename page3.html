@@ -3,6 +3,20 @@
 <head>
 <title>MTVsites markmori/more</title>
 <link href="main.css" rel="stylesheet" type="text/css">
+   <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 </head>
     
 <body>
@@ -23,6 +37,7 @@
 <br>
 <img src="drphil.jpg" alt="Do not press" style="width:220px;height:150px;border:0">
 <p><img src="polished_earth.gif" alt="world" style="float:left;""width:130px;height:100px;"></p>  
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
 <div class="footer" style="color: white;">
 <h5>instagram @iromkram</h5>
 </div>
