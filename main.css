@@ -21,10 +21,12 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 li a.active {
   background-color: aliceblue;
   color: black;
 }
+
 li a:hover {
   background-color: aliceblue;
   color: black;
