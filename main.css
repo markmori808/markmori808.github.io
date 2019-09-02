@@ -22,8 +22,8 @@ li a {
   text-decoration: none;
 }
 li a.active {
-	background-color: aliceblue;
-	color: #333;
+  background-color: aliceblue;
+  color: black;
 }
 li a:hover {
   background-color: aliceblue;
